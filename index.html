@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Conversor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Conversor</h1>
+      <input type="number" id="num" />
+
+      <div id="select">
+        <div class="medida">
+          <input type="radio" name="medida" id="toFahr"/>
+          <label for="toFahr">Celcius/Fahrenheit</label>
+        </div>
+
+        <div class="medida">
+          <input type="radio" name="medida" id="toCelc"/>
+          <label for="toCelc">Fahrenheit/Celcius</label>
+        </div>
+      </div>
+      <button id="submit" onclick="converter()">Converter</button>
+      <p id="painel_result"></p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
